@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>📖books on 👾TAKEABYTE</title>
-    <link>https://takeabyte.io/books/</link>
+    <link>https://Blackcat1997.github.io/books/</link>
     <description>Recent content in 📖books on 👾TAKEABYTE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Dec 2018 04:44:38 +0800</lastBuildDate>
     
-	<atom:link href="https://takeabyte.io/books/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://Blackcat1997.github.io/books/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>第5本</title>
-      <link>https://takeabyte.io/books/my-first-post/</link>
+      <link>https://Blackcat1997.github.io/books/my-first-post/</link>
       <pubDate>Sun, 02 Dec 2018 04:44:38 +0800</pubDate>
       
-      <guid>https://takeabyte.io/books/my-first-post/</guid>
+      <guid>https://Blackcat1997.github.io/books/my-first-post/</guid>
       <description>hello</description>
     </item>
     
