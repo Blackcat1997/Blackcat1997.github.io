@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>👾TAKEABYTE</title>
-    <link>https://Blackcat1997.github.io/</link>
+    <link>https://takeabyte.io/</link>
     <description>Recent content on 👾TAKEABYTE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 02 Dec 2018 04:44:38 +0800</lastBuildDate>
     
-	<atom:link href="https://Blackcat1997.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://takeabyte.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>My First Post</title>
-      <link>https://Blackcat1997.github.io/movies/my-first-post/</link>
+      <link>https://takeabyte.io/movies/my-first-post/</link>
       <pubDate>Sun, 02 Dec 2018 04:44:38 +0800</pubDate>
       
-      <guid>https://Blackcat1997.github.io/movies/my-first-post/</guid>
+      <guid>https://takeabyte.io/movies/my-first-post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>https://Blackcat1997.github.io/others/my-first-post/</link>
+      <link>https://takeabyte.io/others/my-first-post/</link>
       <pubDate>Sun, 02 Dec 2018 04:44:38 +0800</pubDate>
       
-      <guid>https://Blackcat1997.github.io/others/my-first-post/</guid>
+      <guid>https://takeabyte.io/others/my-first-post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>https://Blackcat1997.github.io/devs/my-first-post/</link>
+      <link>https://takeabyte.io/devs/my-first-post/</link>
       <pubDate>Sun, 02 Dec 2018 04:44:38 +0800</pubDate>
       
-      <guid>https://Blackcat1997.github.io/devs/my-first-post/</guid>
+      <guid>https://takeabyte.io/devs/my-first-post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>第5本</title>
-      <link>https://Blackcat1997.github.io/books/my-first-post/</link>
+      <link>https://takeabyte.io/books/my-first-post/</link>
       <pubDate>Sun, 02 Dec 2018 04:44:38 +0800</pubDate>
       
-      <guid>https://Blackcat1997.github.io/books/my-first-post/</guid>
+      <guid>https://takeabyte.io/books/my-first-post/</guid>
       <description>hello</description>
     </item>
     
     <item>
       <title>WHO AM I🛸</title>
-      <link>https://Blackcat1997.github.io/about/</link>
+      <link>https://takeabyte.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://Blackcat1997.github.io/about/</guid>
+      <guid>https://takeabyte.io/about/</guid>
       <description>Shush！I&amp;rsquo;m an Alien.👽</description>
     </item>
     
