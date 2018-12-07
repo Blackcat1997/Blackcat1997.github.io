@@ -6,10 +6,19 @@
     <description>Recent content in 👨‍💻devs on 👾TAKEABYTE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Dec 2018 04:44:38 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 07 Dec 2018 13:00:44 +0800</lastBuildDate>
     
 	<atom:link href="https://Blackcat1997.github.io/devs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>《iOS Apprentice》N1.md</title>
+      <link>https://Blackcat1997.github.io/devs/ios-apprenticen1/</link>
+      <pubDate>Fri, 07 Dec 2018 13:00:44 +0800</pubDate>
+      
+      <guid>https://Blackcat1997.github.io/devs/ios-apprenticen1/</guid>
+      <description>《iOS Apprentice》Note.1  每一个屏幕Screen都由一个view controller所管理  设计模式  如何让按钮进行工作  在View Controller的Swift文件中定义一个动作 与Interface Builder进行连接（*MVC模式*） 如何连接？  检查大括号是否缺失  按住⌘键，点击大括号  在iOS中，app是事件驱动，意思就是对象object监听所发生的特定事件，并加以执行。 什么是Cocoa Touch？  iOS中所有framework的集合统称为Cocoa Touch  什么是framework？  UIKit Foundation Core Graphics AVFoundation Etc.    UIKit使用的是point不是pixel  什么是point和pixel，区别在哪里？ Developers work in points, designers work in pixels.  Method是什么？  a method is simply a function that belongs to an object. Method是属于一个object的函数  什么是object 什么是函数   “Calling a method”和“Sending a message”的意思相同</description>
+    </item>
     
     <item>
       <title>博客建成</title>
