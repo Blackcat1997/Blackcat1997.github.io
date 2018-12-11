@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Be creative.">
+    <meta name="description" content="https://Blackcat1997.github.io/">
+    <meta name="keywords" content="blog,developer,personal">
+    
+    <meta property="og:site_name" content="👾TAKEABYTE">
+    <meta property="og:title" content="
+  《iOS Apprentice》读书笔记（二） - 👾TAKEABYTE
+">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Blackcat1997.github.io/devs/ipn2/">
+    <meta property="og:image" content="https://Blackcat1997.github.io/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://Blackcat1997.github.io/devs/ipn2/">
+    <meta name="twitter:image" content="https://Blackcat1997.github.io/">
+
+    <base href="https://Blackcat1997.github.io/">
+    <title>
+  《iOS Apprentice》读书笔记（二） - 👾TAKEABYTE
+</title>
+
+    <link rel="canonical" href="https://Blackcat1997.github.io/devs/ipn2/">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://Blackcat1997.github.io/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://Blackcat1997.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://Blackcat1997.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.52" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">👾TAKEABYTE</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://Blackcat1997.github.io/devs">Devs</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://Blackcat1997.github.io/books">Books</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://Blackcat1997.github.io/movies">movies</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://Blackcat1997.github.io/others">others</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://Blackcat1997.github.io/about">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>《iOS Apprentice》读书笔记（二）</h1>
+    </header>
+
+    
+
+<h2 id="1-关于tableview中的row和cell的问题">1. 关于TableView中的row和cell的问题</h2>
+
+<p>如果使用tableview作为页面的话，那么data就是显示在tableview的cell里面，而数据是以row的形式展示，也就是一行一行的显示，那么一个row就对应一个cell，但cell的数量是固定的，屏幕上一次性能显示多少个cell，就有多少个cell，但row可以有很多个，当一个row被划上去看不到了之后，那它之前所在的cell就被移上来的row填充，这说明cell是可以重复使用的（re-used）。</p>
+
+<p>要是cell能够被不同类型重复使用，就要给cell添加一个Resue Identifier。</p>
+
+<h2 id="2-return返回值通常被称为方法的结果">2. return返回值通常被称为方法的结果。</h2>
+
+<h2 id="3-特殊注释">3. 特殊注释</h2>
+
+<ul>
+<li><p>// Mark:- ABC</p>
+
+<p>Mark表示这是一个标记，用于标记一段代码，方便管理代码，能够通过Xcode的Jump Bar快速找到代码的位置。</p></li>
+
+<li><p>// TODO:- 可以表示待办提醒，表示代码需要完成</p></li>
+
+<li><p>//FIXME: - 表示代码需要重写或是调整</p></li>
+</ul>
+
+<p>* 其中的 - 用于分割区间</p>
+
+<h2 id="4-如何在tableview中创建cell">4. 如何在tableview中创建cell</h2>
+
+<h3 id="view层">View层</h3>
+
+<ul>
+<li>添加Table View Controller，会自动附带一个prototype cell</li>
+<li>在左侧的Document Outline点击<strong>Table View Cell</strong>，在右侧的Attributes inspector的Identifier的位置给cell命个名</li>
+</ul>
+
+<h3 id="controller层">Controller层</h3>
+
+<p>调用</p>
+<div class="highlight"><pre class="chroma">tableview.dequeueReusableCell(withIdentifier:for:)</pre></div>
+<ul>
+<li><p>用于拷贝一个新的cell或是循环使用一个不在使用中的已经存在的cell， 比如这样，</p>
+
+<p>override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {</p>
+<div class="highlight"><pre class="chroma">    let cell = tableView.dequeueReusableCell(withIdentifier: &#34;ChecklistItem&#34;, for: indexPath)</pre></div>
+<p>}</p></li>
+</ul>
+
+<h2 id="5-indexpath索引定位">5. IndexPath索引定位</h2>
+
+<p>IndexPath用于指向table中特定的一个row，也就是说IndexPath是用于索引数据层的，而cell只是显示IndexPath指向的那个row中所存的data。</p>
+
+<h2 id="6-method和function的区别">6. Method和Function的区别</h2>
+
+<p>Method是函数，但函数不一定是method，method是基于object的，函数是独立的，method是不是只能由其所属的class中的object调用?</p>
+
+<p>### 关于Method的构造</p>
+<div class="highlight"><pre class="chroma">override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
+...
+}</pre></div>
+<ul>
+<li>首先这个method的名字不是tableview，而是tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)。也就是说形参parameter的名字也是方法名的一部分。</li>
+<li>func代表是函数</li>
+<li>形参Parameter
+
+<ul>
+<li>_  tableview和 cellForRowAt  indexPath是形参名</li>
+<li>前面的 _ 和 cellForRowAt是外部形参名，用于外部调用时使用</li>
+<li>后面的tableview和 indexPath是局部形参名，用于方法本身内部使用</li>
+<li>UITableView和IndexPath是形参的类型</li>
+</ul></li>
+
+<li><p>返回值</p>
+
+<p>→代表存在返回值，后面的UITableViewCell就是返回值的类型，如果没有返回值，可以省略不写箭头和类型。</p></li>
+</ul>
+
+<h2 id="7-ios中的三种基本设计模式design-patterns">7. iOS中的三种基本设计模式Design Patterns</h2>
+
+<ul>
+<li>MVC</li>
+
+<li><p>Delegation</p>
+
+<p>让一个object代替另一个去做事情</p></li>
+
+<li><p>Target-action</p>
+
+<p>将事件events（如点击按钮）与具体的动作方法method连接起来</p></li>
+</ul>
+
+<p><em>《iOS Apprentice》Page 229</em></p>
+
+  </article>
+</section>
+
+
+      </div>
+      
+        <footer class="footer">
+  <section class="container">
+    
+      <div class="">
+        <a class="sns-share twitter-share" href=""><i class=""></i></a>
+        <a class="fb btn sns-share fb-share" href=""></i></a>
+        <a class="sns-share hatena-share" href=""></i></a>
+        <a class="sns-share line-share" href=""><i class=""></i></a>
+      </div>
+    
+    
+     
+
+  </section>
+</footer>
+<div class="fixed-bar">
+  <section class="container">
+    
+    
+      <div class="">
+        <font size = "3"  face="Fira+Mono"><b>"登峰造极"</b></font>
+        <a class="fb btn sns-share fb-share"><i class=""></i></a>
+        <a class="sns-share hatena-share"></i></a>
+        <a class="sns-share line-share"><i class=""></i></a>
+       </div>
+    
+  </section>
+</div>
+
+      
+    </main>
+
+    
+
+  <script src="https://Blackcat1997.github.io/js/app.js"></script>
+  
+  </body>
+</html>

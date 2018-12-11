@@ -6,10 +6,30 @@
     <description>Recent content in 👨‍💻devs on 👾TAKEABYTE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Dec 2018 13:00:44 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 12 Dec 2018 01:12:59 +0800</lastBuildDate>
     
 	<atom:link href="https://Blackcat1997.github.io/devs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>《iOS Apprentice》读书笔记（二）</title>
+      <link>https://Blackcat1997.github.io/devs/ipn2/</link>
+      <pubDate>Wed, 12 Dec 2018 01:12:59 +0800</pubDate>
+      
+      <guid>https://Blackcat1997.github.io/devs/ipn2/</guid>
+      <description>1. 关于TableView中的row和cell的问题 如果使用tableview作为页面的话，那么data就是显示在tableview的cell里面，而数据是以row的形式展示，也就是一行一行的显示，那么一个row就对应一个cell，但cell的数量是固定的，屏幕上一次性能显示多少个cell，就有多少个cell，但row可以有很多个，当一个row被划上去看不到了之后，那它之前所在的cell就被移上来的row填充，这说明cell是可以重复使用的（re-used）。
+要是cell能够被不同类型重复使用，就要给cell添加一个Resue Identifier。
+2. return返回值通常被称为方法的结果。 3. 特殊注释  // Mark:- ABC
+Mark表示这是一个标记，用于标记一段代码，方便管理代码，能够通过Xcode的Jump Bar快速找到代码的位置。
+ // TODO:- 可以表示待办提醒，表示代码需要完成
+ //FIXME: - 表示代码需要重写或是调整
+  * 其中的 - 用于分割区间
+4. 如何在tableview中创建cell View层  添加Table View Controller，会自动附带一个prototype cell 在左侧的Document Outline点击Table View Cell，在右侧的Attributes inspector的Identifier的位置给cell命个名  Controller层 调用
+tableview.dequeueReusableCell(withIdentifier:for:)  用于拷贝一个新的cell或是循环使用一个不在使用中的已经存在的cell， 比如这样，
+override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&amp;gt; UITableViewCell {
+let cell = tableView.dequeueReusableCell(withIdentifier: &amp;#34;ChecklistItem&amp;#34;, for: indexPath) }
+  5.</description>
+    </item>
     
     <item>
       <title>《iOS Apprentice》读书笔记（一）</title>
