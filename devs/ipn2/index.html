@@ -129,13 +129,14 @@
 <h3 id="controller层">Controller层</h3>
 
 <p>调用</p>
-<div class="highlight"><pre class="chroma">tableview.dequeueReusableCell(withIdentifier:for:)</pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-swift" data-lang="swift">    <span class="n">tableview</span><span class="p">.</span><span class="n">dequeueReusableCell</span><span class="p">(</span><span class="n">withIdentifier</span><span class="p">:</span><span class="k">for</span><span class="p">:)</span></code></pre></div>
 <ul>
 <li><p>用于拷贝一个新的cell或是循环使用一个不在使用中的已经存在的cell， 比如这样，</p>
-
-<p>override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {</p>
-<div class="highlight"><pre class="chroma">    let cell = tableView.dequeueReusableCell(withIdentifier: &#34;ChecklistItem&#34;, for: indexPath)</pre></div>
-<p>}</p></li>
+<div class="highlight"><pre class="chroma"><code class="language-swift" data-lang="swift"><span class="kr">override</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="kc">_</span> <span class="n">tableView</span><span class="p">:</span> <span class="n">UITableView</span><span class="p">,</span> <span class="n">cellForRowAt</span> <span class="n">indexPath</span><span class="p">:</span> <span class="n">IndexPath</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="n">UITableViewCell</span> <span class="p">{</span>
+            
+        <span class="kd">let</span> <span class="nv">cell</span> <span class="p">=</span> <span class="n">tableView</span><span class="p">.</span><span class="n">dequeueReusableCell</span><span class="p">(</span><span class="n">withIdentifier</span><span class="p">:</span> <span class="s">&#34;ChecklistItem&#34;</span><span class="p">,</span> <span class="k">for</span><span class="p">:</span> <span class="n">indexPath</span><span class="p">)</span>
+    
+<span class="p">}</span></code></pre></div></li>
 </ul>
 
 <h2 id="5-indexpath索引定位">5. IndexPath索引定位</h2>
@@ -147,9 +148,9 @@
 <p>Method是函数，但函数不一定是method，method是基于object的，函数是独立的，method是不是只能由其所属的class中的object调用?</p>
 
 <p>### 关于Method的构造</p>
-<div class="highlight"><pre class="chroma">override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
-...
-}</pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-swift" data-lang="swift">    <span class="kr">override</span> <span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="kc">_</span> <span class="n">tableView</span><span class="p">:</span> <span class="n">UITableView</span><span class="p">,</span> <span class="n">cellForRowAt</span> <span class="n">indexPath</span><span class="p">:</span> <span class="n">IndexPath</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="n">UITableViewCell</span> <span class="p">{</span>
+    <span class="p">...</span>
+    <span class="p">}</span></code></pre></div>
 <ul>
 <li>首先这个method的名字不是tableview，而是tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath)。也就是说形参parameter的名字也是方法名的一部分。</li>
 <li>func代表是函数</li>

@@ -26,9 +26,7 @@ Mark表示这是一个标记，用于标记一段代码，方便管理代码，�
   * 其中的 - 用于分割区间
 4. 如何在tableview中创建cell View层  添加Table View Controller，会自动附带一个prototype cell 在左侧的Document Outline点击Table View Cell，在右侧的Attributes inspector的Identifier的位置给cell命个名  Controller层 调用
 tableview.dequeueReusableCell(withIdentifier:for:)  用于拷贝一个新的cell或是循环使用一个不在使用中的已经存在的cell， 比如这样，
-override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&amp;gt; UITableViewCell {
-let cell = tableView.dequeueReusableCell(withIdentifier: &amp;#34;ChecklistItem&amp;#34;, for: indexPath) }
-  5.</description>
+override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&amp;gt; UITableViewCell { let cell = tableView.dequeueReusableCell(withIdentifier: &amp;#34;ChecklistItem&amp;#34;, for: indexPath) }  5.</description>
     </item>
     
     <item>
