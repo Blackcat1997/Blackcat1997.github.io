@@ -28,7 +28,7 @@ Mark表示这是一个标记，用于标记一段代码，方便管理代码，�
 tableview.dequeueReusableCell(withIdentifier:for:)  用于拷贝一个新的cell或是循环使用一个不在使用中的已经存在的cell， 比如这样，
 override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&amp;gt; UITableViewCell { let cell = tableView.dequeueReusableCell(withIdentifier: &amp;#34;ChecklistItem&amp;#34;, for: indexPath) }  5.IndexPath索引定位 IndexPath用于指向table中特定的一个row，也就是说IndexPath是用于索引数据层的，而cell只是显示IndexPath指向的那个row中所存的data。
 6.Method和Function的区别 Method是函数，但函数不一定是method，method是基于object的，函数是独立的，method是不是只能由其所属的class中的object调用?
-### 关于Method的构造</description>
+关于Method的构造 override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&amp;gt; UITableViewCell { .</description>
     </item>
     
     <item>
