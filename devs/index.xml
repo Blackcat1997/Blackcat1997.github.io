@@ -6,10 +6,27 @@
     <description>Recent content in 👨‍💻devs on 👾TAKEABYTE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Dec 2018 01:12:59 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 14 Dec 2018 20:03:54 +0800</lastBuildDate>
     
 	<atom:link href="https://Blackcat1997.github.io/devs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>《iOS Apprentice》读书笔记（三）</title>
+      <link>https://Blackcat1997.github.io/devs/ian3/</link>
+      <pubDate>Fri, 14 Dec 2018 20:03:54 +0800</pubDate>
+      
+      <guid>https://Blackcat1997.github.io/devs/ian3/</guid>
+      <description>1. 关于MVC MVC是一种设计模式 * M代表Model objects，用于数据存储 * V代表View objects，用于视觉处理，UI动效等 * C代表Controller objects，连接M和V，用户通过点击V，C检测到点击事件，对所点击的V对应的M进行数据处理
+2. 什么是Property（属性） Property是在一个对象中所使用到的变量或常量。
+3.Refactoring(代码重构) 定义：整理代码的过程叫做代码重构
+ 不修正错误 不增加新的功能 不影响输出结果  作用
+ 调整代码，增加可读性 简化结构  4. Automatic Reference Counting （ARC）自动引用计数 内存管理（待补充）
+5.屏幕screens之间的跳转 屏幕直接连接类型称为segue，segue的类型有：
+ Show Show Detail Present Modally Present as Popover Custom  6.一个view controller的对象只在用户与它交互时是活动的，在用完之后，这个对象会被摧毁，并且所占用的内存也会被回收。 7. 什么时候使用static cells？ 事先知道table view会有多少个区域和多少行数据的时候，使用static cell。
+8. 什么是delegate？（待补充） 9.View Controller之间信息传递 App的基础任务之一就是将信息从一个View Controller传递到另一个View Controller，具体是如何传递的？
+ prepareForSegue Delegate&amp;amp;Protocol  10. Loose Coupling 松散耦合 屏幕B独立于屏幕A，但仍然与其交流，成为松散耦合。</description>
+    </item>
     
     <item>
       <title>《iOS Apprentice》读书笔记（二）</title>
