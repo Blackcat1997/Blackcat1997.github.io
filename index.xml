@@ -17,7 +17,7 @@
       <pubDate>Fri, 14 Dec 2018 20:03:54 +0800</pubDate>
       
       <guid>https://Blackcat1997.github.io/devs/ian3/</guid>
-      <description>1. 关于MVC MVC是一种设计模式 * M代表Model objects，用于数据存储 * V代表View objects，用于视觉处理，UI动效等 * C代表Controller objects，连接M和V，用户通过点击V，C检测到点击事件，对所点击的V对应的M进行数据处理
+      <description>1. 关于MVC MVC是一种设计模式 * M代表Model objects，用于数据存储 * V代表View objects，用于视觉处理，UI动效等 * C代表Controller objects，连接M和V，用户通过点击V，C检测到点击事件，对所点击的V对应的M进行数据处理.
 2. 什么是Property（属性） Property是在一个对象中所使用到的变量或常量。
 3.Refactoring(代码重构) 定义：整理代码的过程叫做代码重构
  不修正错误 不增加新的功能 不影响输出结果  作用
