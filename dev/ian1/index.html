@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Be creative.">
+    <meta name="description" content="https://Blackcat1997.github.io/">
+    <meta name="keywords" content="blog,developer,personal">
+    
+    <meta property="og:site_name" content="👾TAKEABYTE">
+    <meta property="og:title" content="
+  《iOS Apprentice》读书笔记（一） - 👾TAKEABYTE
+">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Blackcat1997.github.io/dev/ian1/">
+    <meta property="og:image" content="https://Blackcat1997.github.io/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://Blackcat1997.github.io/dev/ian1/">
+    <meta name="twitter:image" content="https://Blackcat1997.github.io/">
+
+    <base href="https://Blackcat1997.github.io/">
+    <title>
+  《iOS Apprentice》读书笔记（一） - 👾TAKEABYTE
+</title>
+
+    <link rel="canonical" href="https://Blackcat1997.github.io/dev/ian1/">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://Blackcat1997.github.io/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://Blackcat1997.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://Blackcat1997.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.52" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">👾TAKEABYTE</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://Blackcat1997.github.io/dev">Dev</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://Blackcat1997.github.io/books">Books</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://Blackcat1997.github.io/movies">movies</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://Blackcat1997.github.io/others">others</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://Blackcat1997.github.io/about">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>《iOS Apprentice》读书笔记（一）</h1>
+    </header>
+
+    <p><font face="PingFang SC"></p>
+
+<ol>
+<li>每一个屏幕Screen都由一个view controller所管理
+
+<ul>
+<li>设计模式</li>
+</ul></li>
+<li>如何让按钮进行工作
+
+<ul>
+<li>在View Controller的Swift文件中定义一个动作</li>
+<li>与Interface Builder进行连接（*MVC模式*）</li>
+<li><strong>如何连接？</strong></li>
+</ul></li>
+<li>检查大括号是否缺失
+
+<ul>
+<li>按住⌘键，点击大括号</li>
+</ul></li>
+<li>在iOS中，app是事件驱动，意思就是对象object监听所发生的特定事件，并加以执行。</li>
+<li>什么是Cocoa Touch？
+
+<ul>
+<li>iOS中所有framework的集合统称为Cocoa Touch
+
+<ul>
+<li>什么是framework？
+
+<ul>
+<li>UIKit</li>
+<li>Foundation</li>
+<li>Core Graphics</li>
+<li>AVFoundation</li>
+<li>Etc.</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>UIKit使用的是point不是pixel
+
+<ul>
+<li><strong>什么是point和pixel，区别在哪里？</strong>
+<em>Developers work in points, designers work in pixels.</em></li>
+</ul></li>
+<li>Method是什么？
+
+<ul>
+<li>a method is simply a function that belongs to an object.
+<em>Method是属于一个object的函数</em>
+
+<ul>
+<li>什么是object</li>
+<li>什么是函数</li>
+</ul></li>
+</ul></li>
+
+<li><p>“Calling a method”和“Sending a message”的意思相同</p>
+
+<ul>
+<li><p>跳转到所调用的method的地方，然后在method执行完成之后，将return返回值传递回跳转前的地方</p></li>
+
+<li><p><strong>如何调用一个method？</strong></p></li>
+</ul></li>
+
+<li><p>Function函数和method方法的区别</p>
+
+<ul>
+<li>函数并不属于一个object，但method是</li>
+<li>method是函数，但函数不一定是method</li>
+<li>两者分别用什么用途？什么时候用method？什么时候会用到函数？</li>
+</ul></li>
+
+<li><p>Locals</p>
+
+<ul>
+<li>Global scope 全局 —— 声明之后可在任何地方使用</li>
+<li>Instance scope 实例作用域 —— These objects are alive for as long as the object that owns them stays alive. alive是什么意思？</li>
+<li>Local scope 局部 —— 只作用在一定范围内
+<em>You use instance variables if you want to keep a certain value around, from one action event to the next.</em>
+<br /></li>
+</ul></li>
+
+<li><p>一个outlet的变量需要声明成@IBOutlet weak var类型，并在末尾加上&rdquo;!&ldquo;。</p>
+
+<ul>
+<li>一个outlet必须和storyboard的某个部件连接
+<br /></li>
+</ul></li>
+
+<li><p>如果要在两个不同的地方做同样的事情，创建一个method去实现，而不是复制代码。</p></li>
+
+<li><p>Action method和常规method之间有区别吗？</p>
+
+<ul>
+<li>没有</li>
+<li>唯一特别之处在于action method中的IBAction的属性允许Interface Builder看见method，这样才能让此method连接上按钮等
+<br /></li>
+</ul></li>
+
+<li><p>Type Inference 类型推断</p>
+
+<ul>
+<li>Swift可定义方式自动推断类型
+<code>var number = 0</code>
+<code>var number: Int = 0</code></li>
+</ul></li>
+
+<li><p>常量也能拥有不同的值？</p>
+
+<ul>
+<li>each time a method is invoked, its local variables and constants are created anew. The old values have long been discarded and you get brand new ones.
+每次当一个方法被调用的时候，它的局部变量和常量都会被重新创建，因此之前的旧值被丢弃，便可以得到新值了。</li>
+</ul></li>
+
+<li><p><strong>什么是实例变量？</strong></p></li>
+
+<li><p>项目的设置基本上都存在Info.plist里面.</p></li>
+
+<li><p>对于每一个view，在position和size上都要设置constraint。</p>
+
+<ul>
+<li>如果出现的不是蓝条而是橙条，则说明Auto Layout有问题
+
+<ul>
+<li>解决方法
+
+<ul>
+<li>点击目标部件</li>
+<li>在Auto Layout附近点击Update Frames按钮</li>
+<li>也可以用菜单栏 Editor ▸ Resolve Auto Layout Issues ▸ Update Frames</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ol>
+
+<p></font></p>
+
+  </article>
+</section>
+
+
+      </div>
+      
+        <footer class="footer">
+  <section class="container">
+    
+      <div class="">
+        <a class="sns-share twitter-share" href=""><i class=""></i></a>
+        <a class="fb btn sns-share fb-share" href=""></i></a>
+        <a class="sns-share hatena-share" href=""></i></a>
+        <a class="sns-share line-share" href=""><i class=""></i></a>
+      </div>
+    
+    
+     
+
+  </section>
+</footer>
+<div class="fixed-bar">
+  <section class="container">
+    
+    
+      <div class="">
+        <font size = "3"  face="Fira+Mono"><b>"登峰造极"</b></font>
+        <a class="fb btn sns-share fb-share"><i class=""></i></a>
+        <a class="sns-share hatena-share"></i></a>
+        <a class="sns-share line-share"><i class=""></i></a>
+       </div>
+    
+  </section>
+</div>
+
+      
+    </main>
+
+    
+
+  <script src="https://Blackcat1997.github.io/js/app.js"></script>
+  
+  </body>
+</html>

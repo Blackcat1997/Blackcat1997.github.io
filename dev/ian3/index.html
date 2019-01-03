@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Be creative.">
+    <meta name="description" content="https://Blackcat1997.github.io/">
+    <meta name="keywords" content="blog,developer,personal">
+    
+    <meta property="og:site_name" content="👾TAKEABYTE">
+    <meta property="og:title" content="
+  《iOS Apprentice》读书笔记（三） - 👾TAKEABYTE
+">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Blackcat1997.github.io/dev/ian3/">
+    <meta property="og:image" content="https://Blackcat1997.github.io/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://Blackcat1997.github.io/dev/ian3/">
+    <meta name="twitter:image" content="https://Blackcat1997.github.io/">
+
+    <base href="https://Blackcat1997.github.io/">
+    <title>
+  《iOS Apprentice》读书笔记（三） - 👾TAKEABYTE
+</title>
+
+    <link rel="canonical" href="https://Blackcat1997.github.io/dev/ian3/">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="https://Blackcat1997.github.io/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://Blackcat1997.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://Blackcat1997.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.52" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">👾TAKEABYTE</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://Blackcat1997.github.io/dev">Dev</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://Blackcat1997.github.io/books">Books</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://Blackcat1997.github.io/movies">movies</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://Blackcat1997.github.io/others">others</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://Blackcat1997.github.io/about">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>《iOS Apprentice》读书笔记（三）</h1>
+    </header>
+
+    
+
+<p><font face="PingFang SC"></p>
+
+<h2 id="1-关于mvc">1. 关于MVC</h2>
+
+<p>MVC是一种设计模式</p>
+
+<ul>
+<li>M代表Model objects，用于数据存储</li>
+<li>V代表View objects，用于视觉处理，UI动效等</li>
+<li>C代表Controller objects，连接M和V，用户通过点击V，C检测到点击事件，对所点击的V对应的M进行数据处理.</li>
+</ul>
+
+<p><img src="https://github.com/Blackcat1997/Blackcat1997.github.io/raw/master/%F0%9F%91%A8%E2%80%8D%F0%9F%92%BBdevs/3.png" alt="" /></p>
+
+<h2 id="2-什么是property-属性">2. 什么是Property（属性）</h2>
+
+<p>Property是在一个对象中所使用到的变量或常量。</p>
+
+<h2 id="3-refactoring-代码重构">3.Refactoring(代码重构)</h2>
+
+<p>定义：整理代码的过程叫做代码重构</p>
+
+<ul>
+<li>不修正错误</li>
+<li>不增加新的功能</li>
+<li>不影响输出结果</li>
+</ul>
+
+<p>作用</p>
+
+<ul>
+<li>调整代码，增加可读性</li>
+<li>简化结构</li>
+</ul>
+
+<h2 id="4-automatic-reference-counting-arc-自动引用计数">4. Automatic Reference Counting （ARC）自动引用计数</h2>
+
+<p>内存管理（待补充）</p>
+
+<h2 id="5-屏幕screens之间的跳转">5.屏幕screens之间的跳转</h2>
+
+<p>屏幕直接连接类型称为segue，segue的类型有：</p>
+
+<ul>
+<li>Show</li>
+<li>Show Detail</li>
+<li>Present Modally</li>
+<li>Present as Popover</li>
+<li>Custom</li>
+</ul>
+
+<h2 id="6-一个view-controller的对象只在用户与它交互时是活动的-在用完之后-这个对象会被摧毁-并且所占用的内存也会被回收">6.一个view controller的对象只在用户与它交互时是活动的，在用完之后，这个对象会被摧毁，并且所占用的内存也会被回收。</h2>
+
+<h2 id="7-什么时候使用static-cells">7. 什么时候使用static cells？</h2>
+
+<p>事先知道table view会有多少个区域和多少行数据的时候，使用static cell。</p>
+
+<h2 id="8-什么是delegate-待补充">8. 什么是delegate？（待补充）</h2>
+
+<h2 id="9-view-controller之间信息传递">9.View Controller之间信息传递</h2>
+
+<p>App的基础任务之一就是将信息从一个View Controller传递到另一个View Controller，具体是如何传递的？</p>
+
+<ul>
+<li>prepareForSegue</li>
+<li>Delegate&amp;Protocol</li>
+</ul>
+
+<h2 id="10-loose-coupling-松散耦合">10. Loose Coupling 松散耦合</h2>
+
+<p>屏幕B独立于屏幕A，但仍然与其交流，成为松散耦合。</p>
+
+<h2 id="11-protocol-协议">11. Protocol 协议</h2>
+
+<p>协议就是一组方法名字的集合，协议可以继承。</p>
+
+<h2 id="12-null-pointer-deference-空指针引用错误">12. Null pointer deference 空指针引用错误</h2>
+
+<p>当你没想到一个变量的值为nil，而程序调用了这个变量的时候，程序就会崩溃。</p>
+
+<h2 id="13-如何实现delegate委托">13.如何实现delegate委托</h2>
+
+<ul>
+<li>为对象B定义一个delegate protocol委托协议</li>
+<li>给对象B定义一个optional delegate可选委托</li>
+<li>当事件发生时，将信息从对象B传递给委托——对象A</li>
+<li>让对象A遵守委托协议</li>
+<li>告诉对象B，对象A是它的委托delegate</li>
+</ul>
+
+<h2 id="14-的用处">14. “==”的用处</h2>
+
+<p>“==”不仅仅适用于数字，同样适用于字符串</p>
+
+<h2 id="15-as-的用法">15. as!的用法</h2>
+
+<p>什么是forced downcast？</p>
+
+<h2 id="16-weak的用法">16.weak的用法</h2>
+
+<p><img src="https://github.com/Blackcat1997/Blackcat1997.github.io/raw/master/%F0%9F%91%A8%E2%80%8D%F0%9F%92%BBdevs/2.png" alt="" /></p>
+
+<p>用weak防止循环引用，让A和B不互相持有，“被动”的一方不去持有“主动”的一方。</p>
+
+<p>如果能够确定在访问的时候不会已被释放的话，尽量使用unowned，如果存在释放，用weak。</p>
+
+<p><em>Page 316</em>
+</font></p>
+
+  </article>
+</section>
+
+
+      </div>
+      
+        <footer class="footer">
+  <section class="container">
+    
+      <div class="">
+        <a class="sns-share twitter-share" href=""><i class=""></i></a>
+        <a class="fb btn sns-share fb-share" href=""></i></a>
+        <a class="sns-share hatena-share" href=""></i></a>
+        <a class="sns-share line-share" href=""><i class=""></i></a>
+      </div>
+    
+    
+     
+
+  </section>
+</footer>
+<div class="fixed-bar">
+  <section class="container">
+    
+    
+      <div class="">
+        <font size = "3"  face="Fira+Mono"><b>"登峰造极"</b></font>
+        <a class="fb btn sns-share fb-share"><i class=""></i></a>
+        <a class="sns-share hatena-share"></i></a>
+        <a class="sns-share line-share"><i class=""></i></a>
+       </div>
+    
+  </section>
+</div>
+
+      
+    </main>
+
+    
+
+  <script src="https://Blackcat1997.github.io/js/app.js"></script>
+  
+  </body>
+</html>

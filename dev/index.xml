@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>👾TAKEABYTE</title>
-    <link>https://Blackcat1997.github.io/</link>
-    <description>Recent content on 👾TAKEABYTE</description>
+    <title>👨‍💻devs on 👾TAKEABYTE</title>
+    <link>https://Blackcat1997.github.io/dev/</link>
+    <description>Recent content in 👨‍💻devs on 👾TAKEABYTE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 14 Dec 2018 20:03:54 +0800</lastBuildDate>
     
-	<atom:link href="https://Blackcat1997.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://Blackcat1997.github.io/dev/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -56,49 +56,12 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
     </item>
     
     <item>
-      <title>Nil</title>
-      <link>https://Blackcat1997.github.io/others/nil/</link>
-      <pubDate>Sun, 02 Dec 2018 04:44:38 +0800</pubDate>
-      
-      <guid>https://Blackcat1997.github.io/others/nil/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Venom</title>
-      <link>https://Blackcat1997.github.io/movies/venom/</link>
-      <pubDate>Sun, 02 Dec 2018 04:44:38 +0800</pubDate>
-      
-      <guid>https://Blackcat1997.github.io/movies/venom/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>《iOS Apprentice》</title>
-      <link>https://Blackcat1997.github.io/books/ios-apprentice/</link>
-      <pubDate>Sun, 02 Dec 2018 04:44:38 +0800</pubDate>
-      
-      <guid>https://Blackcat1997.github.io/books/ios-apprentice/</guid>
-      <description>在读</description>
-    </item>
-    
-    <item>
       <title>博客建成</title>
       <link>https://Blackcat1997.github.io/dev/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E6%88%90/</link>
       <pubDate>Sun, 02 Dec 2018 04:44:38 +0800</pubDate>
       
       <guid>https://Blackcat1997.github.io/dev/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E6%88%90/</guid>
       <description>2018年12月3日 成功搭建博客Takeabyte。</description>
-    </item>
-    
-    <item>
-      <title>WHO AM I🛸</title>
-      <link>https://Blackcat1997.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://Blackcat1997.github.io/about/</guid>
-      <description>Shush！I&amp;rsquo;m an Alien.👽
-Email: amaze2333@gmail.com</description>
     </item>
     
   </channel>
