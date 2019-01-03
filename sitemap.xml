@@ -43,6 +43,12 @@
   </url>
   
   <url>
+    <loc>https://Blackcat1997.github.io/dev/</loc>
+    <lastmod>2018-12-14T20:03:54+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://Blackcat1997.github.io/tags/</loc>
     <priority>0</priority>
   </url>
@@ -60,12 +66,6 @@
   <url>
     <loc>https://Blackcat1997.github.io/others/</loc>
     <lastmod>2018-12-02T04:44:38+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://Blackcat1997.github.io/dev/</loc>
-    <lastmod>2018-12-14T20:03:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
